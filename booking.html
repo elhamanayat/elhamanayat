@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Ride – Taxi Anayat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo logo-text">
+      Taxi <span>Anayat</span>
+    </a>
+
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+</nav>
+
+
+<main class="container booking-layout">
+
+  <!-- BOOKING CARD -->
+  <div class="booking-card">
+    <h2>Book Your Ride</h2>
+    <p class="booking-subtitle">
+      Enter your trip details and we’ll take care of the rest.
+    </p>
+
+    <form class="booking-form">
+      <input placeholder="Pickup location" required>
+      <input placeholder="Drop-off location" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input placeholder="Your name" required>
+      <input placeholder="Phone number" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <!-- MAP CARD -->
+  <div class="map-card">
+    <iframe
+      src="https://www.google.com/maps?q=Malmo,Sweden&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</main>
+
+
+</body>
+</html>

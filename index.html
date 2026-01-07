@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taxi Anayat — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo logo-text">
+  Taxi <span>Anayat</span>
+</a>
+    <div class="nav-right">
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <img src="images/hero.jpg" class="hero-img" alt="Taxi service">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Fast. Safe. Always there.</h1>
+    <p>Reliable taxi service with professional drivers and comfort.</p>
+    <div class="hero-cta">
+      <a href="booking.html" class="btn primary">Book Your Ride</a>
+      <a href="tel:0763135277" class="btn ghost">Call 076 313 52 77</a>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main class="container">
+
+  <section class="intro">
+    <h2>Welcome to Taxi Anayat</h2>
+    <p>
+      We provide dependable local and airport taxi services.
+      Professional drivers, clean cars, and on-time pickups.
+    </p>
+  </section>
+
+  <section class="image-cards">
+    <article class="card">
+      <img src="images/taxi1.jpg" alt="">
+      <h3>Airport Transfers</h3>
+      <p>Comfortable and punctual airport rides.</p>
+    </article>
+
+    <article class="card">
+      <img src="images/taxi2.jpg" alt="">
+      <h3>City Rides</h3>
+      <p>Fast and affordable rides across the city.</p>
+    </article>
+
+    <article class="card">
+      <img src="images/taxi3.jpg" alt="">
+      <h3>Professional Drivers</h3>
+      <p>Experienced drivers focused on safety.</p>
+    </article>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © <span id="year"></span> Taxi Anayat - 
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
