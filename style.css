@@ -320,7 +320,7 @@ body {
 /* =========================
    MOBILE (FINAL)
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .nav-inner {
     padding: 14px 16px;
@@ -374,6 +374,6 @@ body {
   }
 
   .map-card {
-    min-height: 380px;
+    min-height: 450px;
   }
 }
