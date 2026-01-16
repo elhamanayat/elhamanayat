@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Ride – Taxi Anayat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav class="site-nav">
   <div class="nav-inner">
     <a href="index.html" class="logo logo-text">
@@ -19,7 +21,6 @@
   </div>
 </nav>
 
-
 <main class="container booking-layout">
 
   <!-- BOOKING CARD -->
@@ -30,27 +31,58 @@
     </p>
 
     <form class="booking-form">
-      <input placeholder="Pickup location" required>
-      <input placeholder="Drop-off location" required>
-      <input type="date" required>
-      <input type="time" required>
-      <input placeholder="Your name" required>
-      <input placeholder="Phone number" required>
+
+      <div class="field">
+        <label>Pickup location</label>
+        <input type="text" placeholder="Example: Triangeln Station" required>
+      </div>
+
+      <div class="field">
+        <label>Drop-off location</label>
+        <input type="text" placeholder="Example: Malmö Airport" required>
+      </div>
+
+      <div class="two-fields">
+        <div class="field">
+          <label>Date</label>
+          <input type="date" required>
+        </div>
+
+        <div class="field">
+          <label>Time</label>
+          <input type="time" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Your name</label>
+        <input type="text" placeholder="Full name" required>
+      </div>
+
+      <div class="field">
+        <label>Phone number</label>
+        <input type="tel" placeholder="+46 70 000 00 00" required>
+      </div>
+
       <button type="submit">Book Now</button>
+
+      <p class="booking-note">
+        ✅ Safe rides • ✅ Quick response • ✅ 24/7 service
+      </p>
+
     </form>
   </div>
 
   <!-- MAP CARD -->
   <div class="map-card">
     <iframe
-      src="https://www.google.com/maps?q=Malmo,Sweden&output=embed"
+      src="https://www.google.com/maps?q=Malm%C3%B6&z=12&output=embed"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 
 </main>
-
 
 </body>
 </html>
