@@ -448,6 +448,21 @@ body {
   }
 
   .map-card {
-    min-height: 280px; /* 450px is too huge */
+    min-height: 280px; 
   }
+}
+
+
+/* Removing underlines */
+a {
+  text-decoration: none;
+}
+
+.nav-right a,
+.logo-text {
+  text-decoration: none;
+}
+
+.nav-right .active {
+  text-decoration: underline;
 }
