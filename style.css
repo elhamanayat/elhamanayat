@@ -470,14 +470,11 @@ a {
 
 /*  Fixing homepage  cards  */
 
-@media (max-width: 600px) {
-  .card h3 {
-    font-size: 1.25rem;
-  }
+@media (max-width: 900px) {
+  .image-cards { grid-template-columns: 1fr 1fr; }
+}
 
-  .card p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+@media (max-width: 600px) {
+  .image-cards { grid-template-columns: 1fr; }
 }
 
