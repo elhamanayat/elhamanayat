@@ -359,7 +359,7 @@ body {
 /* =========================
    MOBILE (FIXED + PREMIUM)
 ========================= */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
   html, body {
     overflow-x: hidden; /* fixes side scrolling */
@@ -464,5 +464,5 @@ a {
 }
 
 .nav-right .active {
-  text-decoration: underline;
+  text-decoration: none;
 }
