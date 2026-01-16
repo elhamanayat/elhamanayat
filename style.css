@@ -318,28 +318,49 @@ body {
 }
 
 /* =========================
-   MOBILE (FINAL)
+   MOBILE (FIXED + PREMIUM)
 ========================= */
 @media (max-width: 600px) {
 
+  html, body {
+    overflow-x: hidden; /* fixes side scrolling */
+  }
+
+  /* NAVBAR */
   .nav-inner {
-    padding: 14px 16px;
+    height: 60px;
+    padding: 0 16px; /* keep only left/right padding */
   }
 
+  .logo img {
+    height: 28px;
+    width: auto;
+  }
+
+  /* KEEP NAV LINKS VISIBLE (clean + small) */
   .nav-right {
-    display: none;
+    display: flex;
+    gap: 16px;
   }
 
-  .logo-text {
-    font-size: 1.2rem;
+  .nav-right a {
+    margin-left: 0;
+    font-size: 0.95rem;
   }
 
+  /* HERO */
   .hero-img {
-    height: 65vh;
+    height: 380px; /* stable on mobile */
+  }
+
+  .hero-content {
+    padding: 32px 16px;
+    text-align: left;
   }
 
   .hero-content h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .hero-content p {
@@ -348,6 +369,8 @@ body {
 
   .hero-cta {
     flex-direction: column;
+    gap: 12px;
+    max-width: 280px;
   }
 
   .hero-cta .btn {
@@ -355,8 +378,14 @@ body {
     text-align: center;
   }
 
+  /* CONTAINER */
+  .container {
+    padding: 48px 16px;
+  }
+
+  /* ABOUT */
   .about-hero {
-    height: 55vh;
+    height: 260px; /* stable */
   }
 
   .about-text h1 {
@@ -365,15 +394,21 @@ body {
 
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
+  /* BOOKING */
   .booking-layout {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
+  }
+
+  .booking-card {
+    padding: 22px;
   }
 
   .map-card {
-    min-height: 450px;
+    min-height: 280px; /* 450px is too huge */
   }
 }
