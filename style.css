@@ -466,3 +466,18 @@ a {
 .nav-right .active {
   text-decoration: none;
 }
+
+
+/*  Fixing homepage  cards  */
+
+@media (max-width: 600px) {
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
